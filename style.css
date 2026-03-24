@@ -39,9 +39,10 @@ body {
 .profile-img {
     width: 180px;
     height: 180px;
-    object-fit: cover;
+    object-fit: cover; /* ensures image fills the circle */
     border-radius: 50%;
     border: 3px solid #1b4332;
+    display: block;
     margin-right: 1.5rem; /* spacing between image and text */
 }
 
@@ -62,7 +63,7 @@ h2 {
 
 /* PROJECT CARDS */
 .project-card {
-    background-color: #042104;
+    background-color: #1c1f1c;
     border: 1px solid #4caf50;
     margin-bottom: 20px;
     transition: 0.3s;
@@ -83,4 +84,20 @@ footer {
     background-color: #000;
     color: #e5e5e5;
     padding: 20px 0;
+}
+
+/* RESPONSIVE HERO */
+@media (max-width: 767px) {
+    .hero {
+        text-align: center;
+    }
+
+    .hero .container {
+        flex-direction: column;
+    }
+
+    .profile-img {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
 }
