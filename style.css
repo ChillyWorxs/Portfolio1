@@ -13,19 +13,31 @@ body {
     text-align: center;
 }
 
+/* Profile container */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center horizontally */
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
 /* Profile image */
-.profile-img {
+.profile-container .profile-img {
     width: 200px;
     height: 200px;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid #f0f0f0;
+    margin-top: 20px; /* spacing below name */
 }
 
 /* Email link */
 .email-link {
     color: #a8e6cf;
     text-decoration: none;
+    margin-top: 10px;
 }
 
 .email-link:hover {
